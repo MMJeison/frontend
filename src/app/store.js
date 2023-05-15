@@ -3,24 +3,27 @@ import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 import counterReducer from './features/counter/counterSlice'
+import authReducer from './features/auth/authSlice'
 
 const persistConfig = {
-    key: 'root',
-    storage,
-    whitelist: ['counter'],
-    blacklist: []
+  key: 'root',
+  storage,
+  whitelist: ['counter'],
+  blacklist: []
 }
 
 const rootReducer = combineReducers({
-    counter: counterReducer
+  counter: counterReducer,
+  auth: authReducer
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
-    reducer: persistedReducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-        serializableCheck: false
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false
     })
 })
 
