@@ -97,7 +97,7 @@ export default function HomePage() {
                 <div className="card_background">ANÁLISIS 2</div>
                 <h3 className="card_subject">Back-end</h3>
                 <div className="card-members">
-                  <p>Juan Felipe Rendón</p>
+                  <p>Juan Felipe Escobar</p>
                   <p>Danilo Tovar</p>
                   <p>Juan Rivera</p>
                   <p>Sara Lorena</p>

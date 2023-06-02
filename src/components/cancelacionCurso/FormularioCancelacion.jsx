@@ -102,7 +102,7 @@ export default function FormularioCancelacion() {
             <tr>
               <th></th>
               <th>Materia</th>
-              <th>Apocope</th>
+              <th>Nombre materia</th>
               <th>Creditos</th>
               <th>Grupo</th>
               <th>% evaluado</th>
